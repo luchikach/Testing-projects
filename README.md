@@ -60,3 +60,12 @@ This makes your repository look polished and easy to navigate.
 ## Want to make yours look almost identical?
 
 Since you're building a cybersecurity portfolio to help you return to the field, I can also give you a **professional README.md template** that closely matches this style but is written from scratch. It will look like a real SOC threat hunting report while remaining your own work, and you can reuse it for Windows Defender, Microsoft Sentinel, Splunk, CrowdStrike, and other threat hunting projects.
+
+
+DeviceFileEvents  
+| where DeviceName == "wutang"  
+| where InitiatingProcessAccountName == "methodman"  
+| where FileName contains "tor"  
+| where Timestamp >= datetime(2026-01-06T21:18:07.1084878Z) 
+| order by Timestamp desc  
+| project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
