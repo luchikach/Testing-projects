@@ -69,3 +69,6 @@ DeviceFileEvents
 | where Timestamp >= datetime(2026-01-06T21:18:07.1084878Z) 
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
+
+
+I said this is a mark up
